@@ -1,7 +1,8 @@
 import leia = require("readline-sync");
+import { ProdutoController } from "./controller/ProdutoController";
 
 export function main() {
-
+    const controller = new ProdutoController();
     let opcao: number;
 
     while (true) {
@@ -30,40 +31,10 @@ export function main() {
             console.log("\nFreeSurf Store agradece sua visita, volte sempre!");
             sobre();
             process.exit(0);
-
         }
-        switch (opcao) {
-            case 1:
-                console.log("\n\nCadastrar Produto\n\n");
+        controller.executar(opcao);
 
-                keyPress()
-                break;
-            case 2:
-                console.log("\n\nListar Produtos\n\n");
-
-                keyPress()
-                break;
-            case 3:
-                console.log("\n\nBuscar Produto por id\n\n");
-
-                keyPress()
-                break;
-            case 4:
-                console.log("\n\nAtualizar Dados do Produto\n\n");
-
-                keyPress()
-                break;
-            case 5:
-                console.log("\n\nApagar Produto\n\n");
-
-                keyPress()
-                break;
-            default:
-                console.log("\nOpção Inválida!\n");
-                
-                keyPress()
-                break;
-        }
+        keyPress();
 
     }
 }
@@ -80,4 +51,7 @@ function keyPress(): void {
     console.log("\nPRessione enter para continuar...");
     leia.prompt();
 }
-main();
+
+if (require.main === module) {
+  main();
+}

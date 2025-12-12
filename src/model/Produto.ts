@@ -1,4 +1,4 @@
-export class Produto{
+export abstract class Produto{
     private _id: number;
     private _nome: string;
     private _valor: number;
