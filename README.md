@@ -29,20 +29,20 @@ Este projeto foi desenvolvido com foco em aprendizado, visando praticar:
 
 ## 📂 Estrutura do Projeto
 📦 ecommerce_project
-├── 📁 src
-│ ├── 📁 controller
-│ │ └── 📄 ProdutoController.ts
-│ ├── 📁 model
-│ │ ├── 📄 Produto.ts
-│ │ └── 📄 ProdutoGeral.ts
-│ ├── 📁 repository
-│ │ ├── 📄 InterfaceProdutoRepository.ts
-│ │ └── 📄 ProdutoRepository.ts
-│ └── 📄 Menu.ts
-│
-├── 📄 tsconfig.json
-├── 📄 package.json
-└── 📄 README.md
+└── src
+├── controller
+│ └── ProdutoController.ts
+├── model
+│ ├── Produto.ts
+│ └── ProdutoGeral.ts
+├── repository
+│ ├── InterfaceProdutoRepository.ts
+│ └── ProdutoRepository.ts
+└── Menu.ts
+
+tsconfig.json
+package.json
+README.md
 ---
 📚 Tecnologias Utilizadas:
 TypeScript;
